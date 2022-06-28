@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-$API_KEY = 'token';
+$API_KEY = '1816279599:AAFKaXx1gpnjjOUNAlautw0nDy6XzolT95g';
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -51,6 +51,9 @@ bot('sendMessage',[
 [
 ['text'=>"Github 🐱", 'url'=>"https://github.com/search?utf8=✓&q=$txt"],
 ],
+[
+['text'=>"Play Store 🌐", 'url'=>"https://play.google.com.iq/search?q=$txt"],
+],        
     ]
     ])
     ]);
